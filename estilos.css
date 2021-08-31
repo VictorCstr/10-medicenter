@@ -8,7 +8,7 @@
 
 .container{ 
     display: flex;
-    width: 1020px;
+    width: 990px;
     justify-content: space-between;
 }
 
@@ -35,7 +35,9 @@ nav a{
     text-transform: uppercase;
     color: #727272;
     padding: 10px;
+    text-decoration: none;
 }
+
 
 nav li a:hover , .active{
     background: #39aae1;
@@ -75,7 +77,6 @@ nav li a:hover , .active{
     font-weight: bold;
     max-width: 350px;
     text-shadow: 0px 1px 10px #555555;
-    margin-top: 30px;
 }
 
 
@@ -130,6 +131,10 @@ nav li a:hover , .active{
 }
 
 /*-----------------------------------------------------------*/
+
+.marksnews{
+    margin-top: 15px;
+}
 
 .date{
     background-color: #2b4c99;
@@ -225,16 +230,20 @@ article{
     margin-top: 5px;
 }
 .appointment p{
-    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
     font-size: 13px;
-    padding: 3px;
+    padding: 10px 0px;
     margin-left: 3px;
 }
+
+
 
 /*---------------------------------------------------------------------*/
 
 #rodape{
     background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
 }
 
 #menus , #posts{
@@ -299,13 +308,29 @@ article{
     border-top: 1px solid #2c2c2c;
 }
 
-#geral{
+.tweets a{
+    color:#39AAE1;
+}
+
+.geral{
     display:flex;
 	justify-content:center;
 }
 
 
+
 /*--------------------------------------------------------------------*/
+@media (max-width: 1020px){
+ .container{
+     padding: 5px;
+ }
+
+ #menus{
+     padding: 0px;
+     margin:0px;
+ }
+ }
+
 
 @media (max-width: 600px){
     header .container{
@@ -336,14 +361,14 @@ article{
 
     #itemmenu1, #itemmenu2, #itemmenu3{
     flex: 1;
-    flex-wrap: wrap;
+    
     flex-direction: column;
     }
 
     #posts , #menus , .container , #copy, #rodape{
         flex-direction: column;
         flex: 1;
-        flex-wrap: wrap;
+      
     }
 
     .container{
@@ -378,5 +403,6 @@ article{
     nav li{
         padding: 15px;
     }
+
 
 }
